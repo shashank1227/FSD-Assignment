@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">   
+        <link rel="stylesheet" type="text/css" media="screen" href="StyleSignup.css" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+            <script type="text/javascript">
+                function validate() 
+                {
+                    var x=document.forms["myForm"]["email1"].value;
+                    var atpos = x.indexOf("@");
+                    var dotpos = x.lastIndexOf(".");
+                    var p1=document.forms["myForm"]["password"].value;
+                    var p2=document.forms["myForm"]["password2"].value;
+                    if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+                    {
+                        alert("Not a valid e-mail address");
+                        return false;
+                    }
+                    if(p1.length<6)
+                    {
+                        alert("Password must be greater than 6 characters.");
+                        return false;
+                    }
+                    if(p1==p2)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Password must be same.");
+                        return false;
+                    }
+                }
+            </script>
+    </head>
+    <body>
+        <h1 id="h1"><b>Welcome To Our SignUp Page</b></h1>
+        <div id="d1">
+            <br>
+            <h2 align="center" style="font-family: Lucida Handwriting; color: black; text-shadow: 2px 2px 5px black;">Sign Up Here</h2>
+            <form action="https://unsplash.com/" name="myForm" onsubmit="return validate();">
+            <table cellspacing="8">
+                <tr>
+                    <td align="center" style="font-family: Century Gothic">First Name*</td>
+                    <td align="center" style="font-family: Century Gothic">Middle Name</td>
+                    <td align="center" style="font-family: Century Gothic">Last Name</td>
+                </tr>
+                <tr>
+                    <td><input id="i3" type="text" required/></td>
+                    <td><input id="i1" type="text"></td>
+                    <td><input id="i1" type="text"></td><br>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Century Gothic">City*</td>
+                    <td align="center" style="font-family: Century Gothic">State*</td>
+                    <td align="center" style="font-family: Century Gothic">Country*</td>
+                </tr>
+                <tr>
+                    <td><input id="i3" type="text" required/></td>
+                    <td><input id="i1" type="text" required/></td>
+                    <td><input id="i1" type="text" required/></td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Century Gothic">Email*: </td>
+                    <td colspan="2"><input id="i2" type="email" placeholder=" someone@example.com" name="email1"></td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Century Gothic">Create Password: </td>
+                    <td colspan="2"><input id="i2" type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-family: Century Gothic">Confirm Password: </td>
+                    <td colspan="2"><input id="i2" type="password" name="password2"></td>
+                </tr>
+                <tr>
+                    <td id="t4"><a href="Login.html" style="font-family: Century Gothic" id="a1">Already a User?</a></td>
+                </tr>
+                <tr>
+                <td id= "t3"align="center" style="font-family: Century Gothic"><input type="checkbox" style="cursor: pointer" required/> Agree to the Terms & Conditions</td>
+                </tr>
+                <tr>
+                    <td><button id="button" style="font-family: Century Gothic">Sign Up</button></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </body>
+</html>

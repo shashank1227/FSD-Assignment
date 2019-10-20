@@ -1,0 +1,87 @@
+body
+{
+    background-image: url("SiBack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#h1
+{
+    font-family: Quicksand;
+    text-align: center;
+    color: rgb(173, 194, 214);
+    font-size: 70px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+#d1
+{
+    position:relative;
+    background-color: rgb(235, 190, 190);
+    width:600px;
+    height: 465px;
+    border:none;
+    border-radius: 5px;
+    left:27%;
+    top:0%;
+    box-shadow: 5px 5px 5px black;
+}
+#i1
+{
+    border-radius: 5px;
+    border: none;
+}
+#i2
+{
+    width:250px;
+    border-radius: 5px;
+    border:none;
+}
+#i3
+{
+    position: relative;
+    left:15%;
+    border-radius: 5px;
+    border: none;
+}
+#t3
+{
+    position: relative;
+    left:32%;
+}
+#t4
+{
+    position: relative;
+    left: 75%
+}
+#a1:hover
+{
+    color:rgb(75, 228, 15);
+}
+#button
+{
+    position: relative;
+    left: 115%;
+    cursor: pointer;
+    background-color: rgb(197, 188, 61);
+    border-radius: 8px;
+    color:white;
+    height: 40px;
+    width:95px;
+    padding: 5px;
+    border: none;
+}
+#button:hover
+{
+    background-color: rgb(19, 197, 72);
+    box-shadow: 3px 7px 10px rgb(104, 102, 102);
+    transform: translateX(-4px);
+}
+table
+{
+    position: relative;
+    left:0%;
+    right:50%;
+}
+#img
+{
+
+}

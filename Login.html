@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="StyleLogin.css" />
+        <script>
+            function validate()
+            {
+                var x=document.forms["myForm"]["email"].value;
+                var atpos = x.indexOf("@");
+                var dotpos = x.lastIndexOf(".");
+                if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+                    {
+                        alert("Not a valid e-mail address");
+                        return false;
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="h1">Good to See You Again!</h1>
+        <div id="d1">
+            <img src="login.png" width="250" height="125" id="i1"><br>
+            <form action="https://unsplash.com/" id="f1" name="myForm" onsubmit="return validate();">
+                <table>
+                    <tr>
+                        <td id="t1">Email Address:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email"id="t2" name="email" style="font-family: Century Gothic;" placeholder=" Enter your email address here" required/></td>
+                    </tr>
+                    <tr>
+                        <td id="t1">Password:</td>
+                    </tr>
+                    <tr>
+                        <td><input id="t2" type="password" style="font-family: Century Gothic;" placeholder=" Password" required/></td>
+                    </tr>
+                </table>
+                        <p id="t3" style="font-family: Century Gothic;">Not a User?<a href="SignUp.html" id="a1">Sign Up Here</a></p>
+                        <button id="b1">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
